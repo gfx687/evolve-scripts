@@ -22,6 +22,10 @@
                 {
                     "name": "religion1",
                     "value": "Fanaticism"
+                },
+                                {
+                    "name": "religion2",
+                    "value": "Study Ancients"
                 }
             ]
         }

@@ -1,44 +1,41 @@
 // nmap <leader>r :call ExecInTmuxSplit('node main.js')<CR>
 
-// 1) create a type (jsdoc? Constructor function?) For the config JSON
-// 2) read JSON config
-// 3) read bites
-// 4) insert variables into bites
-// 5) insert default values
-// 6) write output
+// TODO : check that all variables are filled
+// TODO : default values
+// TODO : read multiple files from input and create multiple outputs with the same name as input
 
 const fs = require('node:fs');
 
-const dataRaw = fs.readFileSync('./input/config.json')
-const data = JSON.parse(dataRaw)
+// handleConfig('./input/test.json', './output/test.js')
 
-for (let i = 0; i < data.entries.length; i++) {
-    console.log('###', data.entries[i].name);
+const filenames = fs.readdirSync('./input')
+console.log(filenames);
 
-    const bit = fs.readFileSync('./bits/' + data.entries[i].name + '.js',  'utf8')
-    console.log(bit)
-    console.log();
+for (let i = 0; i < filenames.length; i++) {
+    handleConfig(`./input/${filenames[i]}`, `./output/${filenames[i].replace('json', 'js')}`)
 }
 
-// class Config {
-//     constructor(entries) {
-//         this.Entries = entries
-//     }
-// }
+function handleConfig(configPath, outputPath) {
+    const configRaw = fs.readFileSync(configPath)
+    const config = JSON.parse(configRaw)
 
-// class ConfigEntry {
-//     constructor(name, variables) {
-//         this.Name = name
-//         this.Variables = variables
-//     }
-// }
+    let result = ''
+    for (let i = 0; i < config.entries.length; i++) {
+        let bit = fs.readFileSync('./bits/' + config.entries[i].name + '.js', 'utf8')
 
-// class ConfigEntryVariable {
-//     constructor(name, value) {
-//         this.Name = name
-//         this.Value = value
-//     }
-// }
+        for (let j = 0; j < config.entries[i].variables?.length; j++) {
+            let value = config.entries[i].variables[j].value
+            if (typeof value == 'string')
+                value = `'${value}'`
 
-// const config = new Config()
-// console.log(config.Name);
+            bit = bit.replace(`{${config.entries[i].variables[j].name}}`, value)
+        }
+
+        result += `\n// ########## ${config.entries[i].name}\n\n`
+        result += bit
+    }
+
+    console.log(result);
+
+    fs.writeFileSync(outputPath, result)
+}
