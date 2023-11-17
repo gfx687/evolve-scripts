@@ -16,7 +16,7 @@ townScript = setInterval(function () {
     buildArpa('arpastock_exchange', stockExchangeDesiredCount)
     buildArpa('arparailway', railwayDesiredCount)
     buildArpa('arpalaunch_facility', 1)
-    
+
     // alloy
     document.getElementById('city-biolab')?.children[0].click()
 
@@ -44,7 +44,7 @@ townScript = setInterval(function () {
     document.getElementById('city-amphitheatre')?.children[0].click()
     document.getElementById('city-temple')?.children[0].click()
     document.getElementById('city-meditation')?.children[0].click()
-    
+
     document.getElementById('city-university')?.children[0].click()
 
     document.getElementById('city-garrison')?.children[0].click()

@@ -19,4 +19,3 @@ resourceScript = setInterval(function () {
 
     for (let i = 0; i < 1000; i++) document.getElementById('city-food')?.children[0].click()
 }, 1 * 1000)
-

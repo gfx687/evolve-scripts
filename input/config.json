@@ -1,0 +1,29 @@
+{
+    "entries": [
+        {
+            "name": "resources"
+        },
+        {
+            "name": "attack",
+            "variables": [
+                {
+                    "name": "attackScriptTarget",
+                    "value": "gov0"
+                },
+                {
+                    "name": "attackScriptChance",
+                    "value": 50
+                }
+            ]
+        },
+        {
+            "name": "tech",
+            "variables": [
+                {
+                    "name": "religion1",
+                    "value": "Fanaticism"
+                }
+            ]
+        }
+    ]
+}
