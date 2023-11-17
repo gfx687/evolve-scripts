@@ -1,13 +1,13 @@
-let supercollidersDesiredCount = {supercollidersDesiredCount}
-let monumentDesiredCount = {monumentDesiredCount}
-let stockExchangeDesiredCount = {stockExchangeDesiredCount}
-let railwayDesiredCount = {railwayDesiredCount}
+let supercollidersDesiredCount = {{supercollidersDesiredCount:-1}}
+let monumentDesiredCount = {{monumentDesiredCount:-1}}
+let stockExchangeDesiredCount = {{stockExchangeDesiredCount:0}}
+let railwayDesiredCount = {{railwayDesiredCount:0}}
 
-let factoryLimit = {factoryLimit}
-let fissionLimit = {fissionLimit}
-let fuelDepotLimit = {fuelDepotLimit}
-let containerPortLimit = {containerPortLimit}
-let freightYardLimit = {freightYardLimit}
+let factoryLimit = {{factoryLimit:-1}}
+let fissionLimit = {{fissionLimit:-1}}
+let fuelDepotLimit = {{fuelDepotLimit:-1}}
+let containerPortLimit = {{containerPortLimit:-1}}
+let freightYardLimit = {{freightYardLimit:-1}}
 
 townScript = setInterval(function () {
     // ARPA

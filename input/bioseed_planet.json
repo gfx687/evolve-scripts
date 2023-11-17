@@ -8,13 +8,33 @@
             "variables": [
                 {
                     "name": "religion1",
-                    "value": "Anthropology"
+                    "value": "Fanaticism"
+                },
+                {
+                    "name": "religion2",
+                    "value": "Study Ancients"
                 }
             ]
         },
         {
             "name": "town",
             "variables": [
+                {
+                    "name": "supercollidersDesiredCount",
+                    "value": 5
+                },
+                {
+                    "name": "monumentDesiredCount",
+                    "value": 2
+                },
+                {
+                    "name": "stockExchangeDesiredCount",
+                    "value": 0
+                },
+                {
+                    "name": "railwayDesiredCount",
+                    "value": 0
+                },
                 {
                     "name": "factoryLimit",
                     "value": 1
@@ -39,3 +59,4 @@
         }
     ]
 }
+

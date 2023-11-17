@@ -1,5 +1,5 @@
-let attackScriptTarget = {attackScriptTarget} // 'gov0' / 'gov1' / 'gov2'
-let attackScriptChance = {attackScriptChance} // [0-100]
+let attackScriptTarget = {{attackScriptTarget:'gov0'}} // 'gov0' / 'gov1' / 'gov2'
+let attackScriptChance = {{attackScriptChance:50}} // [0-100]
 
 attackScript = setInterval(function () {
     let gov = document.getElementById(attackScriptTarget)

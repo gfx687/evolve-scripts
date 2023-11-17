@@ -1,4 +1,4 @@
-let shrineScriptTarget = {shrineScriptTarget} // 'Waning Gibbous Moon'
+let shrineScriptTarget = {{shrineScriptTarget:'Waning Gibbous Moon'}}
 
 shrineScript = setInterval(function () {
     let moonCycle = document.getElementById('moon')

@@ -1,5 +1,5 @@
-let religion1 = {religion1} // 'Anthropology' or 'Fanaticism'
-let religion2 = {religion2} // 'Study Ancients' or 'Deify Ancients'
+let religion1 = {{religion1:'Fanaticism'}} // 'Anthropology' or 'Fanaticism'
+let religion2 = {{religion2:'Deify Ancients'}} // 'Study Ancients' or 'Deify Ancients'
 
 techScript = setInterval(function () {
     let religionSkip1 = religion1 == 'Anthropology' ? 'Fanaticism' : 'Anthropology'
