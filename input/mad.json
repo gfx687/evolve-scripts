@@ -1,0 +1,61 @@
+{
+    "entries": [
+        {
+            "name": "functions"
+        },
+        {
+            "name": "tech",
+            "variables": [
+                {
+                    "name": "religion1",
+                    "value": "Anthropology"
+                },
+                {
+                    "name": "religion2",
+                    "value": "Study Ancients"
+                }
+            ]
+        },
+        {
+            "name": "town",
+            "variables": [
+                {
+                    "name": "supercollidersDesiredCount",
+                    "value": 5
+                },
+                {
+                    "name": "monumentDesiredCount",
+                    "value": 2
+                },
+                {
+                    "name": "stockExchangeDesiredCount",
+                    "value": 0
+                },
+                {
+                    "name": "railwayDesiredCount",
+                    "value": 0
+                },
+                {
+                    "name": "factoryLimit",
+                    "value": 1
+                },
+                {
+                    "name": "fissionLimit",
+                    "value": 1
+                },
+                {
+                    "name": "fuelDepotLimit",
+                    "value": 2
+                },
+                {
+                    "name": "containerPortLimit",
+                    "value": 7
+                },
+                {
+                    "name": "freightYardLimit",
+                    "value": 10
+                }
+            ]
+        }
+    ]
+}

@@ -17,8 +17,6 @@ function buildArpa(target, desiredCount) {
     }
 }
 
-// TODO : what is the vanilla VS way to say that argument was not passed?'
-
 /**
  * Builds specified structure until desired number of them is reached
  * @param {string} target HTML id of the target building
