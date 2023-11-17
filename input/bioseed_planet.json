@@ -9,10 +9,6 @@
                 {
                     "name": "religion1",
                     "value": "Fanaticism"
-                },
-                {
-                    "name": "religion2",
-                    "value": "Study Ancients"
                 }
             ]
         },
@@ -28,24 +24,8 @@
                     "value": 2
                 },
                 {
-                    "name": "stockExchangeDesiredCount",
-                    "value": 0
-                },
-                {
-                    "name": "railwayDesiredCount",
-                    "value": 0
-                },
-                {
-                    "name": "factoryLimit",
-                    "value": 1
-                },
-                {
-                    "name": "fissionLimit",
-                    "value": 1
-                },
-                {
                     "name": "fuelDepotLimit",
-                    "value": 2
+                    "value": 4
                 },
                 {
                     "name": "containerPortLimit",
